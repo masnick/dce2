@@ -1,0 +1,22 @@
+<div id="csv">
+Paste in CSV:
+<br>
+<textarea style="width: 100%; height: 10em;">
+Set,Alternative,SEVR,CATCH,CHANCE,RED,DURA,RISK,COST
+1,Vaccine A,SEVR2,CATCH1
+1,Vaccine B,SEVR2,CATCH1
+2,Vaccine A,SEVR3,CATCH2
+2,Vaccine B,SEVR3,CATCH2
+3,Vaccine A,SEVR3,CATCH2
+3,Vaccine B,SEVR3,CATCH2
+4,Vaccine A,SEVR1,CATCH1
+4,Vaccine B,SEVR1,CATCH1
+5,Vaccine A,SEVR2,CATCH1
+5,Vaccine B,SEVR2,CATCH1
+6,Vaccine A,SEVR1,CATCH2
+6,Vaccine B,SEVR1,CATCH2</textarea>
+<br><br>
+<input type="submit" id="js-submit">
+</div>
+
+<div id="print"></div>
