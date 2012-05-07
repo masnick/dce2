@@ -2,7 +2,7 @@ class DCE.Models.Attribute extends Backbone.Model
 
   initialize: (options) ->
     # English is default
-    options.language = 'english' unless 'language' of options
+    options.language = 'en' unless 'language' of options
     if 'slug' of options
       captures = options.slug.match(/([A-Z]+)([0-9]+)/)
 
@@ -17,6 +17,11 @@ class DCE.Models.Attribute extends Backbone.Model
       @set({'raw_content': raw_content})
       @set(raw_content['default'])
       @set(raw_content[options.language])
+
+  swapLanguage: (language) ->
+    @set(@get('raw_content').default, {silent: true})
+    @set(@get('raw_content')[language], {silent: true})
+    @change()
 
 class DCE.Collections.Attributes extends Backbone.Collection
   model: DCE.Models.Attribute

@@ -1,2 +1,6 @@
- <h2><%= @title %></h2>
+<h2>
+  <span data-lang="en">Alternative</span>
+  <span data-lang="sw">Mfano</span>
+  <%= @title %>
+</h2>
  <div class="dce-attributes"></div>

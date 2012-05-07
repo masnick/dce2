@@ -36,7 +36,7 @@ class DCE.Views.Index extends Backbone.View
         title: cells[1]
       }))
 
-    @$('#print').html(new DCE.Views.Print({sets: sets}).render().el)
+    @$('#print').html(new DCE.Views.Print({sets: sets}).render().el).swapLanguage()
 
   render: ->
     $(@el).html(@template())

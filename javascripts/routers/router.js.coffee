@@ -6,12 +6,8 @@ class DCE.Routers.Router extends Backbone.Router
   initialize: (options) ->
 
   routes:
-    "print" : "print"
     ".*" : "index"
 
   index: ->
     view = new DCE.Views.Index()
     $("#dce").html(view.render().el)
-
-  print: ->
-    alert('hi')

@@ -1,3 +1,6 @@
-<h1>Which of these two alternatives would you prefer?</h1>
+<h1>
+  <span data-lang="en">Which of these two alternatives would you prefer?</span>
+  <span data-lang="sw">Ni mfano upi kati ya hizi mbili ungechagua?</span>
+</h1>
 <div class="dce-alternatives">
 </div>

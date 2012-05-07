@@ -1,13 +1,12 @@
 DCE.Content = {}
 
-
 DCE.Content['SEVR'] = {
   '1': {
-    'english': {
+    'en': {
       'title':      'Title for sevr 1'
       'content':    "Let's have <strong>some content</strong> here."
     }
-    'swahili': {
+    'sw': {
       'title':      'Nani'
       'content':    "Nani atafahamu kuwa umepima?"
     }
@@ -18,11 +17,11 @@ DCE.Content['SEVR'] = {
     }
   }
   '2': {
-    'english': {
+    'en': {
       'title':      'Title for sevr 2'
       'content':    "Let's have <strong>some content</strong> here."
     }
-    'swahili': {
+    'sw': {
       'title':      'Nani 2'
       'content':    "Nani atafahamu kuwa umepima?"
     }
@@ -33,11 +32,11 @@ DCE.Content['SEVR'] = {
     }
   }
   '3': {
-    'english': {
+    'en': {
       'title':      'Title for sevr 3'
       'content':    "Let's have <strong>some content</strong> here."
     }
-    'swahili': {
+    'sw': {
       'title':      'Nani 3'
       'content':    "Nani atafahamu kuwa umepima?"
     }
@@ -51,11 +50,11 @@ DCE.Content['SEVR'] = {
 
 DCE.Content['CATCH'] = {
   '1': {
-    'english': {
+    'en': {
       'title':      'Title for catch 1'
       'content':    "Let's have some content here."
     }
-    'swahili': {
+    'sw': {
       'title':      'Nani'
       'content':    "Nani atafahamu kuwa umepima?"
     }
@@ -66,11 +65,11 @@ DCE.Content['CATCH'] = {
     }
   }
   '2': {
-    'english': {
+    'en': {
       'title':      'Title for catch 2'
       'content':    "Let's have some content here."
     }
-    'swahili': {
+    'sw': {
       'title':      'Nani 2'
       'content':    "Nani atafahamu kuwa umepima?"
     }

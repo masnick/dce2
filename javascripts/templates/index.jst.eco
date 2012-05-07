@@ -17,6 +17,10 @@ Set,Alternative,SEVR,CATCH,CHANCE,RED,DURA,RISK,COST
 6,Vaccine B,SEVR1,CATCH2</textarea>
 <br><br>
 <input type="submit" id="js-submit">
+<br><br>
+Switch to:
+<a href="#" class="js-swap-language" data-swap-language="en">en</a>
+<a href="#" class="js-swap-language" data-swap-language="sw">sw</a>
 </div>
 
 <div id="print"></div>
