@@ -1,3 +1,5 @@
+$blue: #4863A0;
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -6,59 +8,86 @@ body {
     display: none;
   }
 }
+#csv {
+  padding: 1em;
+  border-bottom: 1px dotted #000;
+  textarea {
+    width: 684px;
+    height: 15em;
+  }
+}
 #print {
-  width: 710px;
+  width: 684px;
   .dce-set {
     page-break-after: always;
     h1 {
-      border: 3px solid #000;
       padding: 5px;
       margin-bottom: 5px;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
-      text-align: center;
     }
     margin: 1em;
-    .dce-alternative {
-      float: left;
-      width: 320px;
-      margin-right: 10px;
-      border: 3px solid #000;
+    .dce-alternatives {
+      border: 1px solid #bbb;
 
-      h2 {
-        font-weight: bold;
-        font-size: 16px;
-        border-bottom: 1px solid #000;
-        padding: 2px;
-        text-align: center;
+      .dce-alternative:first-child {
+        border-right: 10px solid #bbb;
       }
 
-      .dce-attributes {
-        padding: 1em;
+      .dce-alternative {
+        float: left;
+        width: 320px;
 
-        .dce-attribute {
-          margin-top: 10px;
-          border-bottom: 1px solid #000;
-          img {
-            max-width: 100px;
-            max-height: 100px;
-            float: right;
-            margin-left: 10px;
-          }
-          .slug {
-            margin-top: 3px;
-            font-size: 10px;
-            color: #ccc;
-            text-align: left;
-          }
-          p {
-            font-size: 12px;
-            strong {
-              display: block;
-              padding: 3px 0 3px 0;
-              font-size: 18px;
-              font-weight: bold;
+        h2 {
+          font-weight: bold;
+          font-size: 18px;
+          padding: 10px 0 10px 0;
+          text-align: center;
+        }
+        .dce-choice-prompt {
+          text-align: center;
+          color: red;
+          font-weight: bold;
+          font-size: 18px;
+          background-color: #EEE;
+          padding: 1em 0 1em 0;
+        }
+        .slug {
+          font-size: 10px;
+          color: #aaa;
+          background-color: #EEE;
+          padding: 1em 2px 2px 2px;
+        }
+
+        .dce-attributes {
+          .dce-attribute {
+            padding: 1em;
+            margin-top: 10px;
+            border-bottom: 1px solid #bbb;
+            img {
+              max-width: 100px;
+              max-height: 100px;
+              float: right;
+              margin-left: 10px;
             }
+            img.left-image {
+              float: left;
+              margin-left: 0;
+              margin-right: 10px;
+            }
+            p {
+              font-size: 12px;
+              strong {
+                display: block;
+                padding: 3px 0 3px 0;
+                font-size: 18px;
+                font-weight: bold;
+                color: $blue;
+              }
+            }
+          }
+          .dce-attribute:last-child {
+            border-bottom: none;
           }
         }
       }

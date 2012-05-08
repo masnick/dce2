@@ -4,3 +4,5 @@
   <%= @title %>
 </h2>
  <div class="dce-attributes"></div>
+ <div class="dce-choice-prompt">[&nbsp;&nbsp;] <%= @title %></div>
+ <div class="slug"><%= @slugs %></div>

@@ -24,3 +24,11 @@ $ ->
     $('body').swapLanguage(lang)
   )
 
+  $('.js-image-placement').click( (e) ->
+    $img = $('.dce-alternative:nth-child(2) img')
+    if $img.hasClass('left-image')
+      $img.removeClass('left-image')
+    else
+      $img.addClass('left-image')
+  )
+

@@ -1,6 +1,5 @@
-<img src="<%= @image %>">
+<img src="/images/<%= @image %>">
 <p>
   <%= @safe @content %>
 </p>
 <div style="clear: both;"></div>
-<div class="slug"><%= @slug %></div>
