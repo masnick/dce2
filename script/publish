@@ -1,0 +1,17 @@
+#! /usr/bin/env ruby
+require 'fileutils'
+
+FileUtils.rm_rf('_site')
+FileUtils.mkdir('_site')
+
+FileUtils.cp_r('assets', '_site')
+FileUtils.cp_r('images', '_site')
+FileUtils.cp_r('index.html', '_site')
+
+puts "\n\nEnter your NearlyFreeSpeech username:"
+print "> "
+u = gets.strip
+cmd = "rsync --delete -ave ssh ./_site/ #{u}_dce@ssh.phx.nearlyfreespeech.net:/home/public/"
+system cmd
+
+FileUtils.rm_rf('_site')
