@@ -28,5 +28,7 @@ class DCE.Collections.Attributes extends Backbone.Collection
 
 class DCE.Models.Alternative extends Backbone.Model
 
-class DCE.Collections.AlternativeSet extends Backbone.Collection
+class DCE.Collections.Alternatives extends Backbone.Collection
   model: DCE.Models.Alternative
+
+class DCE.Models.Set extends Backbone.Model

@@ -3,8 +3,8 @@ class DCE.Views.PrintSet extends Backbone.View
   className: 'dce-set'
 
   render: ->
-    $(@el).html(@template())
-    for alternative in @collection.models
+    $(@el).html(@template(@model.toJSON()))
+    for alternative in @model.get('alternatives').models
       @$('.dce-alternatives').append(new DCE.Views.PrintAlternative({model: alternative}).render().el)
     @$('.dce-alternatives').append('<div style="clear: both;"></div>')
 

@@ -5,7 +5,7 @@ body {
 }
 @media print {
   #csv {
-    display: none;
+    // display: none;
   }
 }
 #csv {
@@ -20,11 +20,35 @@ body {
   width: 684px;
   .dce-set {
     page-break-after: always;
+    height: 1000px;
     h1 {
       padding: 5px;
       margin-bottom: 5px;
       font-size: 18px;
       font-weight: bold;
+    }
+    footer {
+      position: relative;
+      top: 950px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .header {
+      margin-bottom: 1em;
+      border-bottom: 1px solid #ccc;
+      .survey-id {
+        font-weight: bold;
+        font-size: 16px;
+        float: left;
+        width: 300px;
+      }
+      .choice-task-id {
+        font-weight: bold;
+        font-size: 16px;
+        float: right;
+        width: 300px;
+        text-align: right;
+      }
     }
     margin: 1em;
     .dce-alternatives {
@@ -37,10 +61,11 @@ body {
       .dce-alternative {
         float: left;
         width: 320px;
+        background-color: #eee;
 
         h2 {
           font-weight: bold;
-          font-size: 18px;
+          font-size: 14px;
           padding: 10px 0 10px 0;
           text-align: center;
         }
@@ -49,33 +74,37 @@ body {
           color: red;
           font-weight: bold;
           font-size: 18px;
-          background-color: #EEE;
-          padding: 1em 0 1em 0;
+          padding: .5em 0;
+          margin-bottom: -5px;
         }
         .slug {
           font-size: 10px;
           color: #aaa;
-          background-color: #EEE;
-          padding: 1em 2px 2px 2px;
+          position: relative;
+          bottom: -15px;
         }
 
         .dce-attributes {
           .dce-attribute {
-            padding: 1em;
-            margin-top: 10px;
+            background-color: #fff;
+            padding: 10px 2px;
+            height: 100px;
             border-bottom: 1px solid #bbb;
             img {
               max-width: 100px;
               max-height: 100px;
               float: right;
               margin-left: 10px;
+              margin-right: 2px;
             }
             img.left-image {
               float: left;
               margin-left: 0;
               margin-right: 10px;
+              margin-left: 2px;
             }
             p {
+              text-align: center;
               font-size: 12px;
               strong {
                 display: block;

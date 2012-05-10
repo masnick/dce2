@@ -7,6 +7,6 @@ class DCE.Views.Print extends Backbone.View
   render: ->
     $(@el).html(@template())
     for id, set of @attribute_sets
-      @$('#dce-sets').append(new DCE.Views.PrintSet({collection: set}).render().el)
+      @$('#dce-sets').append(new DCE.Views.PrintSet({model: set}).render().el)
 
     @

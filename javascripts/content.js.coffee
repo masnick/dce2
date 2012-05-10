@@ -4,6 +4,7 @@ DCE.Content = {}
 DCE.Content['WHERE'] = {
   '1': {
     'en': {
+      'title':      "hello world"
       'content':    "You will test at your <strong>Home</strong>"
     }
     'sw': {

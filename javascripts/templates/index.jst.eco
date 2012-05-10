@@ -12,6 +12,8 @@
     <a href="#" class="js-swap-language" data-swap-language="sw">sw</a>
     /
     <a href="#" class="js-image-placement">image placement</a>
+    /
+    <a href="#" class="js-center-p">valign</a>
   </div>
 </div>
 

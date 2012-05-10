@@ -10,7 +10,7 @@ class DCE.Views.Index extends Backbone.View
     output = ''
     counter = 1
     for slug, levels of DCE.Content
-      o = "#{counter},#{slug}"
+      o = "xxx,#{counter},#{slug}"
       for level of levels
         o += ",#{slug}#{level}"
       output += "#{o}\n#{o}\n"
@@ -40,18 +40,27 @@ class DCE.Views.Index extends Backbone.View
 
         attrs = new DCE.Collections.Attributes
 
-        for cell in cells[2..]
+        for cell in cells[3..]
           attrs.add(new DCE.Models.Attribute({slug: cell}))
 
-        sets[cells[0]] = new DCE.Collections.AlternativeSet unless cells[0] of sets
+        unless cells[1] of sets
 
-        sets[cells[0]].add(new DCE.Models.Alternative({
+          sets[cells[1]] = new DCE.Models.Set({
+            alternatives: new DCE.Collections.Alternatives
+            slug: line
+            survey_id: line.split(',')[0]
+            choice_task_id: line.split(',')[1]
+          })
+
+        alternatives = sets[cells[1]].get('alternatives')
+        alternatives.add(new DCE.Models.Alternative({
           attributes: attrs
-          title: cells[1]
+          title: cells[2]
           slugs: line
         }))
 
     @$('#print').html(new DCE.Views.Print({sets: sets}).render().el).swapLanguage()
+    $('body').imagePlacement().centerP()
 
   render: ->
     $(@el).html(@template())

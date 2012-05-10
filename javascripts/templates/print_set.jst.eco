@@ -1,3 +1,8 @@
+<div class="header">
+  <div class="survey-id">Survey: <%= @survey_id %></div>
+  <div class="choice-task-id"><%= @choice_task_id %></div>
+  <div style="clear: both;"></div>
+</div>
 <h1>
   <span data-lang="en">Which of these two alternatives would you prefer?</span>
   <span data-lang="sw">Ni mfano upi kati ya hizi mbili ungechagua?</span>
