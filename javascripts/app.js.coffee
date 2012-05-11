@@ -9,6 +9,7 @@ window.DCE =
   Collections: {}
   Routers: {}
   Views: {}
+  Content: window.Content
 
 $.fn.swapLanguage = (lang = 'en') ->
   this.find('[data-lang]').hide()

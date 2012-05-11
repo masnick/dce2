@@ -17,6 +17,6 @@ end
 sprockets = Sprockets::Environment.new
 sprockets.append_path(File.join(ROOT, 'javascripts'))
 
-guard 'sprockets2', :sprockets => sprockets, :assets_path => File.join(ROOT, 'assets'), :precompile => [ %r{javascripts\.js} ], :digest => false, :gz => false, :clean => false do
+guard 'sprockets2', :sprockets => sprockets, :assets_path => File.join(ROOT, 'assets'), :precompile => [ %r{javascripts\.js}, %r{content\.js} ], :digest => false, :gz => false, :clean => false do
   watch(%r{^javascripts/.+$})
 end
